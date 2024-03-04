@@ -1,0 +1,547 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>TeamLinkup</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex justify-content-between">
+            <div class="logo">
+                <h1>
+                    <a href="index.html"><span>Team</span>Linkup</a>
+                </h1>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li>
+                        <a class="nav-link scrollto" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scrollto" href="#features">Features</a>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#"><span>Tasks</span> <i class="{% static bi bi-chevron-down %}"></i></a>
+                        <ul>
+                            <li><a href="#">Compeleted</a></li>
+                            <li>
+                                <a href="#">In progress</a>
+                            </li>
+                            <li><a href="#">Not Attempted</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link scrollto" href="#goals">Goals</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scrollto" href="#pricing">Subscriptions</a>
+                    </li>
+                    <li class="register-list">
+                        <button class="register-btn btn btn-info w-100"> 
+                            <a class="nav-link scrollto" href="register">Register</a>
+                        </button>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" style="background-image: url({% static 'assets/img/hero-carousel/1.jpg' %})">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">
+                                    The Best Collaborative Hub
+                                </h2>
+                                <p class="animate__animated animate__fadeInUp">
+                                    We bring teams closer together with connected workflows, docs, project tracking, real-time dashboards.
+                                </p>
+                                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item"
+              style="background-image: url({% static 'assets/img/hero-carousel/2.jpg' %})"
+            >
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    At Our Team Collaboration Hub
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    Trust that your work is safe and secure with our powerful
+                    set of data protection and admin controls.
+                  </p>
+                  <a
+                    href="#about"
+                    class="btn-get-started scrollto animate__animated animate__fadeInUp"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item"
+              style="background-image: url({% static 'assets/img/hero-carousel/3.jpg' %})"
+            >
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    Our Collaboration Services
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    We offer robust capabilities to help you manage work and
+                    work together for more productively.
+                  </p>
+                  <a
+                    href="#about"   
+                    class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="carousel-control-prev"
+            href="#heroCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bi bi-chevron-left"
+              aria-hidden="true"
+            ></span>
+          </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+        </div>
+    </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <div id="about" class="about-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                            <h2>About TeamLinkup</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- single-well start-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-left">
+                            <div class="single-well">
+                                <a href="#">
+                                    <img src="{% static 'assets/img/about/3.jpg' %}" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-well end-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="well-middle">
+                            <div class="single-well">
+                                <a href="#">
+                                    <h4 class="sec-head">About Us</h4>
+                                </a>
+                                <p>
+                                    Managing a project involves multiple moving pieces—any one of which can become a barrier for project team. We help you track work in real time, whether you’re at the office or on the go. We visualize making the world more -
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check"></i> Communicate Effectively</li>
+                                    <li><i class="bi bi-check"></i> Build Quality Projects</li>
+                                    <li><i class="bi bi-check"></i> Grow 1% everyday</li>
+                                    <li><i class="bi bi-check"></i> Increase Productivity</li>
+                                    <li>
+                                        <i class="bi bi-check"></i> Manage and View Timeline
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col-->
+                </div>
+            </div>
+        </div>
+        <!-- End About Section -->
+
+        <!-- ======= features Section ======= -->
+        <div id="features" class="features-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="features-headline features-head text-center">
+                            <h2>Our Features</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <!-- Start Left features -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-chat-dots"></i>
+                                    </a>
+                                    <h4>Communication</h4>
+                                    <p>
+                                        will offer features such as instant messaging, video conferencing, and threaded discussions. By providing a unified space for conversations, team members can share ideas, updates, and feedback in real-time, fostering effective and transparent communication.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-filetype-docx"></i>
+                                    </a>
+                                    <h4>Files Sharing</h4>
+                                    <p>
+                                        will enable seamless file sharing, allowing team members to upload, download, and collaborate on documents in a centralized platform. This ensures easy access to the latest files, streamlining collaborative efforts and maintaining them.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-people"></i>
+                                    </a>
+                                    <h4>Team Alliance</h4>
+                                    <p>
+                                        will promote tools for task management, goal tracking, and progress monitoring. This encourages a shared understanding of objectives, enhances accountability, and strengthens team cohesion, ultimately contributing to successful project outcomes.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-binoculars"></i>
+                                    </a>
+                                    <h4>24/7 Accessibility</h4>
+                                    <p>
+                                        will allow team members to connect and collaborate from various devices around the clock and far & wide locations. This flexibility ensures that teams can stay productive, whether working in the office, remotely, or on the go.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                    <!-- End Left features -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-shield-lock"></i>
+                                    </a>
+                                    <h4>Security</h4>
+                                    <p>
+                                        will provide data security through encryption, access controls, and secure authentication protocols.These will safeguard sensitive information and ensures that only authorized team members have access to confidential data, fostering a secure and trusted
+                                        collaborative environment.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                    <!-- End Left features -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <!-- end col-md-4 -->
+                        <div class="about-move">
+                            <div class="features-details">
+                                <div class="single-features">
+                                    <a class="features-icon" href="#">
+                                        <i class="bi bi-calendar4-week"></i>
+                                    </a>
+                                    <h4>Task Scheduling</h4>
+                                    <p>
+                                        will offer robust scheduling task features, allowing teams to create, assign, and track tasks efficiently. With integrated calendars, reminders, and progress monitoring. Team members can stay organized, meet deadlines, and maintain a clear overview of
+                                        project timelines, enhancing overall project management .
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- end about-details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End features Section -->
+
+
+
+
+        <!-- ======= Blog Section ======= -->
+        <div id="goals" class="blog-area">
+            <div class="blog-inner area-padding">
+                <div class="blog-overly"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-headline text-center">
+                                <h2>Goals</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Start Left Blog -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <a>
+                                        <img src="{% static 'assets/img/blog/7.png' %}" alt="" />
+                                    </a>
+                                </div>
+'
+                                <div class="blog-text mt-3">
+                                    <h4>
+                                        <a>Powerful task management</a>
+                                    </h4>
+                                    <p>
+                                        Individuals and teams can enhance their ability to achieve objectives, meet deadlines, and successfully navigate the complexities of various projects. Powerful task management is a dynamic and strategic approach that adapts to the specific needs and challenges
+                                        of each situation.
+                                    </p>
+                                </div>
+                                <!-- <span>
+                                    <a href="#" class="ready-btn">Read more</a>
+                                </span> -->
+                            </div>
+                            <!-- Start single blog -->
+                        </div>
+                        <!-- End Left Blog-->
+                        <!-- Start Left Blog -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <a>
+                                        <img src="{% static 'assets/img/blog/10.png' %}" alt="" />
+                                    </a>
+                                </div>
+
+                                <div class="blog-text mt-3">
+                                    <h4>
+                                        <a>Strategic planning</a>
+                                    </h4>
+                                    <p>
+                                        Strategic planning in a task management system involves the process of defining goals, outlining objectives, and creating a structured approach to achieving them within the context of task management. It is a high-level, long-term planning process that
+                                        aligns the tasks and activities of an organization with its overall mission and vision. </p>
+                                </div>
+                                <!-- <span>
+                    <a href="#" class="ready-btn">Read more</a>
+                  </span> -->
+                            </div>
+                            <!-- Start single blog -->
+                        </div>
+                        <!-- End Left Blog-->
+                        <!-- Start Right Blog-->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <a>
+                                        <img src="{% static 'assets/img/blog/8.jpeg' %}" alt="" />
+                                    </a>
+                                </div>
+
+                                <div class="blog-text mt-3">
+                                    <h4>
+                                        <a>Integrated reporting</a>
+                                    </h4>
+                                    <p>
+                                        Integrating reporting in a task management system involves the incorporation of comprehensive reporting features that provide insights into various aspects of task-related activities. This reporting functionality allows users, managers, and stakeholders
+                                        to monitor progress, assess performance, and make informed decisions based on real-time data. </p>
+                                </div>
+                                <!-- <span>
+                                    <a href="#" class="ready-btn">Read more</a>
+                  </span> -->
+                            </div>
+                        </div>
+                        <!-- End Right Blog-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog Section -->
+        <!-- ======= Pricing Section ======= -->
+        
+        <!-- End Pricing Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                <div class="footer-logo">
+                                    <h2><span>Team</span>Linkup</h2>
+                                </div>
+
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                </p>
+                                <div class="footer-icons">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                    <!-- end single footer -->
+                    <div class="col-md-4">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                <h4>information</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                                <div class="footer-contacts">
+                                    <p><span>Tel:</span> +123 456 789</p>
+                                    <p><span>Email:</span> contact@example.com</p>
+                                    <p><span>Working Hours:</span> 9am-5pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single footer -->
+                    <div class="col-md-4">
+                        <div class="footer-content">
+                            <div class="footer-head">
+
+                                <div class="col-md-8 mb-3 ms-4">
+                                    <h5 class="font-weight-bold text-dark mb-3">Subscribe for E-mail Alert! </h5>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control border-0 py-4" placeholder="Your Email" required="required" />
+                                        </div>
+                                        <div>
+                                           <button class="btn2 btn-info btn-block border-0 py-3 mt-4" type="submit">Subscribe Now</button>
+                                       </div>
+                                   </form>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-area-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright text-center">
+                            <p>
+                                &copy; Copyright <strong>TeamLinkup</strong>. All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="credits">
+                            Designed by
+                            <a href="https://bootstrapmade.com/">TeamLinkup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
+</body>
+
+</html>

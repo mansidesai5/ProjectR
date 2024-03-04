@@ -1,0 +1,65 @@
+ .container {
+     justify-content: center;
+     margin-top: 200px;
+     opacity: 1;
+     filter: blur(8px);
+     -webkit-filter: blur(8px);
+ }
+ 
+ .image {
+     background-image: url('assets/img/hero-carousel/2.jpg');
+ }
+ 
+ .register-container {
+     height: 110vh;
+     width: 40%;
+     /* border: 1px solid rgba(169, 227, 189, 0.447); */
+     padding: 40px 0px 40px 15px;
+     /* box-shadow: 0px 0px 5px grey; */
+     background-size: cover;
+     border-radius: 50px;
+     transition: 0.3s;
+     background-color: rgba(190, 211, 211, 0.6);
+ }
+ 
+ .title {
+     text-decoration: none;
+     text-shadow: 0px 0px 2px grey;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: bold;
+     font-size: 35px;
+     color: black;
+ }
+ 
+ .button {
+     text-align: center;
+     width: 40%;
+     box-shadow: 0px 0px 2px black;
+     color: white;
+     text-decoration: none;
+     background-color: #13515a;
+ }
+ 
+ .button a {
+     text-decoration: none;
+ }
+ 
+ .back {
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     padding-top: 15px;
+ }
+ 
+ .backButton {
+     margin-right: 40px;
+ }
+ 
+ .form-control {
+     box-shadow: 0px 0px 5px grey;
+ }
+ 
+ .labelText {
+     color: black;
+     font-weight: 500;
+ }

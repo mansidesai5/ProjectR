@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/assets/css/register.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title></title>
+</head>
+
+<body>
+
+
+    <div class="image d-flex flex-direction justify-content-center" style="background-image: url({% static 'assets/img/hero-carousel/2.jpg' %})">
+
+        <div class="register-container row justify-content-center mt-5 mb-5">
+            <div class="col-md-6 mt-3">
+                <h2 class="text-center mb-4 title">Register</h2>
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="empID" class="labelText">Employee ID</label>
+                        <input name="empID" type="text" class="form-control" id="empID" placeholder="Enter employee id">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="username" class="labelText">Name</label>
+                        <input name="Name" type="text" class="form-control" id="username" placeholder="Enter name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="designation" class="labelText">Designation</label>
+                        <input name="designation" type="text" class="form-control" id="designation" placeholder="Your designation">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="department" class="labelText">Department</label>
+                        <input id="department" 
+                        name="department"
+                        type="dropdown" class="form-control" id="department" placeholder="from which department">
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password" class="labelText">Password</label>
+                        <input name="password" type="password" class="form-control" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="confirmPassword" class="labelText">Confirm Password</label>
+                        <input name="password2" type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+                    </div>
+                    <div class="d-flex flex-direction justify-content-center mr-4">
+                        <button type="submit" class="button backButton btn btn-info btn-block mt-4 mr-4"><a style="color: #fff " href="/">Back</a></button>
+
+                        <button type="submit" class="button btn btn-info btn-block mt-4"><a style="color: #fff " href="login/">Register</a></button>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
